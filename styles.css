@@ -1500,6 +1500,27 @@ body {
   line-height: 1.2;
 }
 
+.cert-card-btn-row .cert-view-btn {
+  background: var(--gradient-primary);
+  color: #090d16 !important;
+  font-weight: 700;
+  font-size: 0.82rem;
+  padding: 7px 14px;
+  border-radius: var(--radius-sm);
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  text-decoration: none;
+  box-shadow: 0 4px 14px rgba(56, 189, 248, 0.25);
+  transition: all var(--transition-fast);
+}
+
+.cert-card-btn-row .cert-view-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(56, 189, 248, 0.45);
+  color: #090d16 !important;
+}
+
 .btn-verify {
   background: rgba(16, 185, 129, 0.12);
   color: #10b981;
