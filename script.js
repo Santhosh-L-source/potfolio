@@ -459,17 +459,28 @@ function initCertificatesModal() {
   certCards.forEach(card => {
     const certKey = card.getAttribute('data-cert');
     if (certKey) {
-      card.addEventListener('click', () => {
+      card.addEventListener('click', (e) => {
+        // Allow links to open normally without popping up modal
+        if (e.target.closest('a')) return;
         openCertificate(certKey);
       });
 
       card.addEventListener('keydown', (e) => {
         if (e.key === 'Enter' || e.key === ' ') {
+          if (e.target.closest('a')) return;
           e.preventDefault();
           openCertificate(certKey);
         }
       });
     }
+  });
+
+  document.querySelectorAll('.open-modal-trigger').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const certKey = btn.getAttribute('data-cert');
+      if (certKey) openCertificate(certKey);
+    });
   });
 
   if (closeBtn) closeBtn.addEventListener('click', closeCertificate);
