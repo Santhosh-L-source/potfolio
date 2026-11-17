@@ -1,0 +1,1138 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Santhosh L - Java Full Stack Developer & Microservices Specialist. Portfolio showcasing projects in Spring Boot, Kafka, React, and Distributed Systems.">
+  <meta name="keywords" content="Santhosh L, Java Developer, Spring Boot, Microservices, Full Stack Developer, Portfolio, Software Engineer, Chennai">
+  <meta name="author" content="Santhosh L">
+  <title>Santhosh L | Java Full Stack Developer</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome / CDN Icons fallback -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Ambient background glow effects -->
+  <div class="glow-orb orb-1"></div>
+  <div class="glow-orb orb-2"></div>
+  <div class="glow-orb orb-3"></div>
+  <div class="grid-overlay"></div>
+
+  <!-- Header / Navigation -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-bracket">&lt;</span>
+        <span class="logo-text">Santhosh<span class="accent-dot">.L</span></span>
+        <span class="logo-bracket">/&gt;</span>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="nav-links">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#certifications" class="nav-link">Certifications</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Theme Toggle -->
+        <button id="theme-toggle" class="icon-btn" aria-label="Toggle Theme" title="Toggle dark/light mode">
+          <i class="fa-solid fa-moon theme-icon-moon"></i>
+          <i class="fa-solid fa-sun theme-icon-sun"></i>
+        </button>
+
+        <!-- CTA Resume Button -->
+        <a href="#contact" class="btn btn-sm btn-outline-glow nav-cta">Let's Connect</a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button id="mobile-toggle" class="mobile-toggle-btn" aria-label="Open Navigation Menu">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobile-menu" class="mobile-menu">
+      <nav class="mobile-nav-links">
+        <a href="#about" class="mobile-nav-link">About</a>
+        <a href="#skills" class="mobile-nav-link">Skills</a>
+        <a href="#experience" class="mobile-nav-link">Experience</a>
+        <a href="#projects" class="mobile-nav-link">Projects</a>
+        <a href="#certifications" class="mobile-nav-link">Certifications</a>
+        <a href="#education" class="mobile-nav-link">Education</a>
+        <a href="#contact" class="mobile-nav-link">Contact</a>
+        <a href="#contact" class="btn btn-primary w-full mt-4">Get In Touch</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section id="hero" class="hero-section">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="hero-badge animate-fade-in">
+            <span class="status-indicator"></span>
+            <span>B.E. Computer Science Student &bull; Seeking Internships & Entry-Level Roles</span>
+          </div>
+
+          <h1 class="hero-title animate-fade-up">
+            Hi, I'm <span class="gradient-text">Santhosh L</span>
+          </h1>
+
+          <div class="typewriter-container animate-fade-up delay-1">
+            <span class="typewriter-prefix">I am a </span>
+            <span id="typewriter-text" class="typewriter-text"></span>
+            <span class="cursor">&nbsp;</span>
+          </div>
+
+          <p class="hero-description animate-fade-up delay-2">
+            Computer Science and Engineering student at <strong>St. Joseph's College of Engineering</strong> (CGPA: 8.32) 
+            and aspiring <strong>Java Full Stack Developer</strong> skilled in <strong>Spring Boot</strong>, 
+            <strong>Microservices</strong>, and <strong>REST APIs</strong>. Passionate about building distributed 
+            backend systems and clean web applications.
+          </p>
+
+          <div class="hero-cta-group animate-fade-up delay-3">
+            <a href="#projects" class="btn btn-primary">
+              <i class="fa-solid fa-code-branch"></i> Explore Projects
+            </a>
+            <a href="#contact" class="btn btn-outline">
+              <i class="fa-regular fa-envelope"></i> Contact Me
+            </a>
+            <a href="#certifications" class="btn btn-secondary">
+              <i class="fa-solid fa-award"></i> Certifications
+            </a>
+          </div>
+        </div>
+
+        <!-- Hero Profile Showcase Card -->
+        <div class="hero-card-container animate-fade-up delay-3">
+          <div class="profile-hero-card">
+            <div class="profile-card-header">
+              <div class="profile-avatar-wrapper">
+                <div class="profile-avatar-circle">
+                  <span class="avatar-initials">SL</span>
+                </div>
+                <span class="avatar-status-badge" title="Actively Seeking Opportunities"></span>
+              </div>
+              <div class="profile-identity">
+                <h3 class="profile-name">Santhosh L</h3>
+                <span class="profile-role">Java Full Stack Developer</span>
+                <span class="profile-college"><i class="fa-solid fa-graduation-cap"></i> St. Joseph's College of Engineering</span>
+              </div>
+            </div>
+
+            <div class="profile-stats-row">
+              <div class="pstat-item">
+                <span class="pstat-num">8.32</span>
+                <span class="pstat-lbl">CGPA (B.E.)</span>
+              </div>
+              <div class="pstat-item">
+                <span class="pstat-num">6+</span>
+                <span class="pstat-lbl">Certifications</span>
+              </div>
+              <div class="pstat-item">
+                <span class="pstat-num">3+</span>
+                <span class="pstat-lbl">Key Projects</span>
+              </div>
+            </div>
+
+            <div class="profile-skills-pills">
+              <span class="profile-pill"><i class="fa-brands fa-java"></i> Java 21</span>
+              <span class="profile-pill"><i class="fa-solid fa-server"></i> Spring Boot</span>
+              <span class="profile-pill"><i class="fa-solid fa-cloud"></i> Microservices</span>
+              <span class="profile-pill"><i class="fa-solid fa-paper-plane"></i> Kafka</span>
+              <span class="profile-pill"><i class="fa-brands fa-react"></i> React</span>
+              <span class="profile-pill"><i class="fa-solid fa-database"></i> PostgreSQL</span>
+              <span class="profile-pill"><i class="fa-solid fa-bolt"></i> Redis</span>
+            </div>
+
+            <div class="profile-card-footer">
+              <div class="profile-contact-chip">
+                <i class="fa-solid fa-location-dot"></i> Chennai, India
+              </div>
+              <div class="profile-contact-chip highlight">
+                <i class="fa-solid fa-circle-check"></i> Verified Credentials
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="section about-section">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">Profile Overview</span>
+          <h2 class="section-title">About Me</h2>
+          <div class="title-underline"></div>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-text-col">
+            <h3 class="about-headline">
+              Transforming complex engineering requirements into <span class="highlight">high-performance backend architectures</span>.
+            </h3>
+            <p class="about-paragraph">
+              I am a Computer Science and Engineering undergraduate at <strong>St. Joseph's College of Engineering</strong> with a keen passion for enterprise backend systems, microservices architectures, and full-stack software development.
+            </p>
+            <p class="about-paragraph">
+              My technical expertise revolves around modern <strong>Java (Java 21)</strong>, the <strong>Spring ecosystem (Spring Boot, Spring Cloud, Spring Security)</strong>, and event-driven communication using <strong>Apache Kafka</strong>. I have architected distributed e-commerce microservices, secure banking portals with transactional integrity and JWT-based authentication, and responsive interactive web applications.
+            </p>
+            <p class="about-paragraph">
+              I pride myself on writing clean, modular, and maintainable code grounded in robust Object-Oriented Principles, solid data structures, and industry-standard design patterns.
+            </p>
+
+            <!-- Quick Bio Highlights -->
+            <div class="bio-highlights">
+              <div class="bio-item">
+                <i class="fa-solid fa-graduation-cap bio-icon"></i>
+                <div>
+                  <strong>Degree:</strong>
+                  <span>B.E. Computer Science & Eng.</span>
+                </div>
+              </div>
+              <div class="bio-item">
+                <i class="fa-solid fa-building-columns bio-icon"></i>
+                <div>
+                  <strong>Institution:</strong>
+                  <span>St. Joseph's College of Engineering</span>
+                </div>
+              </div>
+              <div class="bio-item">
+                <i class="fa-solid fa-chart-line bio-icon"></i>
+                <div>
+                  <strong>Academic Merit:</strong>
+                  <span>CGPA: 8.32 / 10.0</span>
+                </div>
+              </div>
+              <div class="bio-item">
+                <i class="fa-solid fa-location-dot bio-icon"></i>
+                <div>
+                  <strong>Location:</strong>
+                  <span>Chennai, Tamil Nadu, India</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-stats-col">
+            <!-- Pillars of Core Strength -->
+            <div class="pillar-card">
+              <div class="pillar-icon-box">
+                <i class="fa-solid fa-cubes"></i>
+              </div>
+              <div class="pillar-content">
+                <h4>Microservices & Cloud</h4>
+                <p>Configured service discovery (Eureka), centralized routing (Spring Cloud Gateway), and decoupled event-driven services with Apache Kafka.</p>
+              </div>
+            </div>
+
+            <div class="pillar-card">
+              <div class="pillar-icon-box">
+                <i class="fa-solid fa-shield-halved"></i>
+              </div>
+              <div class="pillar-content">
+                <h4>Enterprise Security & APIs</h4>
+                <p>Implemented stateless JWT authentication, BCrypt password hashing, Spring Security role-based authorization, and validated DTO protocols.</p>
+              </div>
+            </div>
+
+            <div class="pillar-card">
+              <div class="pillar-icon-box">
+                <i class="fa-solid fa-database"></i>
+              </div>
+              <div class="pillar-content">
+                <h4>Data Persistence & Caching</h4>
+                <p>Polyglot database mastery across PostgreSQL, MySQL, and MongoDB, augmented with Redis distributed caching for ultra-low latency response.</p>
+              </div>
+            </div>
+
+            <div class="pillar-card">
+              <div class="pillar-icon-box">
+                <i class="fa-solid fa-laptop-code"></i>
+              </div>
+              <div class="pillar-content">
+                <h4>Full-Stack Cohesion</h4>
+                <p>Bridging backend reliability with dynamic user interfaces created with React, modern JavaScript (ES6+), semantic HTML5, and responsive CSS3.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section id="skills" class="section skills-section">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">Technical Competence</span>
+          <h2 class="section-title">Skills & Technologies</h2>
+          <div class="title-underline"></div>
+          <p class="section-subtitle">A comprehensive toolkit honed through practical implementation, hands-on projects, and certifications.</p>
+        </div>
+
+        <!-- Filter buttons -->
+        <div class="skills-filter-tabs">
+          <button class="skill-tab active" data-filter="all">All Skills</button>
+          <button class="skill-tab" data-filter="backend">Backend & Microservices</button>
+          <button class="skill-tab" data-filter="languages">Languages</button>
+          <button class="skill-tab" data-filter="data">Frontend & Databases</button>
+          <button class="skill-tab" data-filter="tools">Tools & DevOps</button>
+          <button class="skill-tab" data-filter="concepts">Concepts & Soft Skills</button>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Backend & Microservices -->
+          <div class="skill-card" data-category="backend">
+            <div class="skill-icon"><i class="fa-brands fa-envira"></i></div>
+            <div class="skill-info">
+              <h4>Spring Boot</h4>
+              <p>RESTful APIs, Spring Data JPA, Auto-configuration</p>
+              <span class="skill-level">Advanced</span>
+            </div>
+          </div>
+
+          <div class="skill-card" data-category="backend">
+            <div class="skill-icon"><i class="fa-solid fa-cloud"></i></div>
+            <div class="skill-info">
+              <h4>Spring Cloud</h4>
+              <p>Eureka Registry, API Gateway, Distributed Config</p>
+              <span class="skill-level">Intermediate</span>
+            </div>
+          </div>
+
+          <div class="skill-card" data-category="backend">
+            <div class="skill-icon"><i class="fa-solid fa-lock"></i></div>
+            <div class="skill-info">
+              <h4>Spring Security & JWT</h4>
+              <p>Token-based Auth, Filters, BCrypt encryption</p>
+              <span class="skill-level">Proficient</span>
+            </div>
+          </div>
+
+          <div class="skill-card" data-category="backend">
+            <div class="skill-icon"><i class="fa-solid fa-paper-plane"></i></div>
+            <div class="skill-info">
+              <h4>Apache Kafka</h4>
+              <p>Event-driven messaging, producer/consumer topics</p>
+              <span class="skill-level">Proficient</span>
+            </div>
+          </div>
+
+          <div class="skill-card" data-category="backend">
+            <div class="skill-icon"><i class="fa-solid fa-network-wired"></i></div>
+            <div class="skill-info">
+              <h4>REST APIs</h4>
+              <p>HTTP verbs, DTO patterns, Status codes, Validation</p>
+              <span class="skill-level">Advanced</span>
+            </div>
+          </div>
+
+          <div class="skill-card" data-category="backend">
+            <div class="skill-icon"><i class="fa-solid fa-layer-group"></i></div>
+            <div class="skill-info">
+              <h4>JPA & Hibernate</h4>
+              <p>ORM, entity mapping, transaction management, JDBC</p>
+              <span class="skill-level">Proficient</span>
+            </div>
+          </div>
+
+          <!-- Languages -->
+          <div class="skill-card" data-category="languages">
+            <div class="skill-icon"><i class="fa-brands fa-java"></i></div>
+            <div class="skill-info">
+              <h4>Java (Java 21)</h4>
+              <p>Core Java, Streams API, Records, Concurrency, OOP</p>
+              <span class="skill-level">Primary Language</span>
+            </div>
+          </div>
+
+          <div class="skill-card" data-category="languages">
+            <div class="skill-icon"><i class="fa-brands fa-js"></i></div>
+            <div class="skill-info">
+              <h4>JavaScript (ES6+)</h4>
+              <p>Async/Await, DOM manipulation, Event loop, APIs</p>
+              <span class="skill-level">Proficient</span>
+            </div>
+          </div>
+
+          <div class="skill-card" data-category="languages">
+            <div class="skill-icon"><i class="fa-brands fa-python"></i></div>
+            <div class="skill-info">
+              <h4>Python</h4>
+              <p>Data science fundamentals, scripting, automation</p>
+              <span class="skill-level">Intermediate</span>
+            </div>
+          </div>
+
+          <div class="skill-card" data-category="languages">
+            <div class="skill-icon"><i class="fa-solid fa-code"></i></div>
+            <div class="skill-info">
+              <h4>C Language</h4>
+              <p>Memory models, pointers, algorithms, foundations</p>
+              <span class="skill-level">Foundational</span>
+            </div>
+          </div>
+
+          <!-- Frontend & Databases -->
+          <div class="skill-card" data-category="data">
+            <div class="skill-icon"><i class="fa-brands fa-react"></i></div>
+            <div class="skill-info">
+              <h4>React</h4>
+              <p>Hooks, State Management, Component Lifecycle</p>
+              <span class="skill-level">Intermediate</span>
+            </div>
+          </div>
+
+          <div class="skill-card" data-category="data">
+            <div class="skill-icon"><i class="fa-solid fa-database"></i></div>
+            <div class="skill-info">
+              <h4>PostgreSQL & MySQL</h4>
+              <p>Relational modeling, indexing, ACID transactions</p>
+              <span class="skill-level">Advanced</span>
+            </div>
+          </div>
+
+          <div class="skill-card" data-category="data">
+            <div class="skill-icon"><i class="fa-solid fa-leaf"></i></div>
+            <div class="skill-info">
+              <h4>MongoDB</h4>
+              <p>NoSQL document modeling, JSON catalogs, aggregation</p>
+              <span class="skill-level">Proficient</span>
+            </div>
+          </div>
+
+          <div class="skill-card" data-category="data">
+            <div class="skill-icon"><i class="fa-solid fa-bolt"></i></div>
+            <div class="skill-info">
+              <h4>Redis</h4>
+              <p>In-memory caching, key-value stores, performance</p>
+              <span class="skill-level">Proficient</span>
+            </div>
+          </div>
+
+          <div class="skill-card" data-category="data">
+            <div class="skill-icon"><i class="fa-brands fa-html5"></i></div>
+            <div class="skill-info">
+              <h4>HTML5 & CSS3</h4>
+              <p>Responsive design, Flexbox, Grid, animations</p>
+              <span class="skill-level">Advanced</span>
+            </div>
+          </div>
+
+          <!-- Tools & Architecture -->
+          <div class="skill-card" data-category="tools">
+            <div class="skill-icon"><i class="fa-brands fa-git-alt"></i></div>
+            <div class="skill-info">
+              <h4>Git & GitHub</h4>
+              <p>Branching strategies, PRs, version control</p>
+              <span class="skill-level">Proficient</span>
+            </div>
+          </div>
+
+          <div class="skill-card" data-category="tools">
+            <div class="skill-icon"><i class="fa-solid fa-cubes-stacked"></i></div>
+            <div class="skill-info">
+              <h4>Apache Maven</h4>
+              <p>Dependency management, multi-module builds, plugins</p>
+              <span class="skill-level">Proficient</span>
+            </div>
+          </div>
+
+          <div class="skill-card" data-category="tools">
+            <div class="skill-icon"><i class="fa-solid fa-vial-circle-check"></i></div>
+            <div class="skill-info">
+              <h4>Postman</h4>
+              <p>API testing, automated collections, environment mocks</p>
+              <span class="skill-level">Advanced</span>
+            </div>
+          </div>
+
+          <div class="skill-card" data-category="tools">
+            <div class="skill-icon"><i class="fa-brands fa-docker"></i></div>
+            <div class="skill-info">
+              <h4>Docker (Basics)</h4>
+              <p>Containerization, Dockerfiles, service isolation</p>
+              <span class="skill-level">Familiar</span>
+            </div>
+          </div>
+
+          <!-- Concepts & Soft Skills -->
+          <div class="skill-card" data-category="concepts">
+            <div class="skill-icon"><i class="fa-solid fa-sitemap"></i></div>
+            <div class="skill-info">
+              <h4>Microservices Architecture</h4>
+              <p>Decoupled services, API gateways, fault tolerance</p>
+              <span class="skill-level">Core Competency</span>
+            </div>
+          </div>
+
+          <div class="skill-card" data-category="concepts">
+            <div class="skill-icon"><i class="fa-solid fa-code-fork"></i></div>
+            <div class="skill-info">
+              <h4>Event-Driven Systems</h4>
+              <p>Async message pub/sub, decoupled communication</p>
+              <span class="skill-level">Core Competency</span>
+            </div>
+          </div>
+
+          <div class="skill-card" data-category="concepts">
+            <div class="skill-icon"><i class="fa-solid fa-brain"></i></div>
+            <div class="skill-info">
+              <h4>DSA & OOP</h4>
+              <p>Clean design patterns, SOLID principles, algorithmic efficiency</p>
+              <span class="skill-level">Core Competency</span>
+            </div>
+          </div>
+
+          <div class="skill-card" data-category="concepts">
+            <div class="skill-icon"><i class="fa-solid fa-people-group"></i></div>
+            <div class="skill-info">
+              <h4>Soft Skills & Collaboration</h4>
+              <p>Critical Thinking, Problem Solving, Time Management, Teamwork</p>
+              <span class="skill-level">Collaborative</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE SECTION -->
+    <section id="experience" class="section experience-section">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">Career Milestones</span>
+          <h2 class="section-title">Work Experience</h2>
+          <div class="title-underline"></div>
+        </div>
+
+        <div class="timeline">
+          <!-- Big-Bucks Innovation Internship -->
+          <div class="timeline-item">
+            <div class="timeline-dot">
+              <i class="fa-solid fa-briefcase"></i>
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="role-title">Full Stack Development Intern</h3>
+                  <h4 class="company-name">Big-Bucks Innovation</h4>
+                </div>
+                <div class="timeline-meta">
+                  <span class="badge-date"><i class="fa-regular fa-calendar"></i> July 2025</span>
+                  <span class="badge-mode"><i class="fa-solid fa-location-arrow"></i> Remote</span>
+                </div>
+              </div>
+
+              <div class="timeline-body">
+                <p class="timeline-desc">
+                  Spearheaded the development and integration of interactive web components and responsive user interface systems within a collaborative agile environment.
+                </p>
+                <ul class="timeline-bullets">
+                  <li>
+                    <i class="fa-solid fa-check"></i>
+                    <span>Developed a responsive <strong>Quiz Game Application</strong> using HTML, CSS, and JavaScript, delivering intuitive user interfaces and fluid gameplay mechanics.</span>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-check"></i>
+                    <span>Designed and integrated modular frontend components using JavaScript, managing asynchronous user interactions, complex quiz validation logic, and dynamic DOM updates.</span>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-check"></i>
+                    <span>Collaborated closely with mentors and development peers to deliver milestones on schedule while strictly following clean code standards and version control best practices.</span>
+                  </li>
+                </ul>
+
+                <div class="timeline-tags">
+                  <span class="tech-tag">HTML5</span>
+                  <span class="tech-tag">CSS3</span>
+                  <span class="tech-tag">JavaScript (ES6+)</span>
+                  <span class="tech-tag">DOM Manipulation</span>
+                  <span class="tech-tag">Git</span>
+                  <span class="tech-tag">Agile Delivery</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects" class="section projects-section">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">Featured Works</span>
+          <h2 class="section-title">Engineering Projects</h2>
+          <div class="title-underline"></div>
+          <p class="section-subtitle">Real-world applications showcasing scalable architecture, clean code, and modern full-stack development.</p>
+        </div>
+
+        <!-- Project Filter Buttons -->
+        <div class="projects-filter-tabs">
+          <button class="project-tab active" data-filter="all">All Projects</button>
+          <button class="project-tab" data-filter="microservices">Microservices & Backend</button>
+          <button class="project-tab" data-filter="fullstack">Full Stack</button>
+          <button class="project-tab" data-filter="frontend">Frontend & Games</button>
+        </div>
+
+        <div class="projects-grid">
+          <!-- PROJECT 1: E-Commerce Microservices Application -->
+          <article class="project-card featured" data-category="microservices">
+            <div class="project-header">
+              <div class="project-type-badge">
+                <i class="fa-solid fa-microchip"></i> Microservices Architecture
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/Santhosh-L-source/potfolio" target="_blank" rel="noopener noreferrer" class="icon-link" title="Source Code"><i class="fa-brands fa-github"></i></a>
+              </div>
+            </div>
+
+            <h3 class="project-title">E-Commerce Distributed Backend Platform</h3>
+            <p class="project-summary">
+              A high-concurrency e-commerce backend built with <strong>Java 21</strong> and <strong>Spring Boot</strong>, decoupled into scalable microservices utilizing event-driven communication and polyglot persistence.
+            </p>
+
+            <!-- Architectural Blueprint Box -->
+            <div class="arch-box">
+              <div class="arch-title"><i class="fa-solid fa-diagram-project"></i> Architecture Highlights</div>
+              <div class="arch-flow">
+                <span class="arch-node">Client</span>
+                <span class="arch-arrow">→</span>
+                <span class="arch-node">Spring Cloud API Gateway</span>
+                <span class="arch-arrow">→</span>
+                <span class="arch-node">Netflix Eureka Registry</span>
+                <span class="arch-arrow">→</span>
+                <span class="arch-node">Decoupled Microservices</span>
+                <span class="arch-arrow">⇄</span>
+                <span class="arch-node highlight-node">Apache Kafka & Redis</span>
+              </div>
+            </div>
+
+            <ul class="project-features">
+              <li>
+                <i class="fa-solid fa-arrow-right-long"></i>
+                <span><strong>Product Service:</strong> Implemented robust CRUD operations utilizing Spring Boot, PostgreSQL for relational consistency, and RESTful APIs.</span>
+              </li>
+              <li>
+                <i class="fa-solid fa-arrow-right-long"></i>
+                <span><strong>Centralized Routing & Discovery:</strong> Integrated Netflix Eureka for dynamic service registration and Spring Cloud Gateway for rate limiting and load balancing.</span>
+              </li>
+              <li>
+                <i class="fa-solid fa-arrow-right-long"></i>
+                <span><strong>Event-Driven Communication:</strong> Integrated Apache Kafka for asynchronous event publishing and pub/sub messaging across services.</span>
+              </li>
+              <li>
+                <i class="fa-solid fa-arrow-right-long"></i>
+                <span><strong>Polyglot Data Layer:</strong> Combined PostgreSQL for transactions, MongoDB for dynamic product catalog schemas, and Redis for distributed sub-millisecond caching.</span>
+              </li>
+              <li>
+                <i class="fa-solid fa-arrow-right-long"></i>
+                <span><strong>Defensive API Contracts:</strong> Enforced DTO patterns and validation constraints to eliminate malicious payloads and guarantee strict schema compliance.</span>
+              </li>
+            </ul>
+
+            <div class="project-tech-stack">
+              <span class="tech-tag">Java 21</span>
+              <span class="tech-tag">Spring Boot 3</span>
+              <span class="tech-tag">Spring Cloud</span>
+              <span class="tech-tag">Apache Kafka</span>
+              <span class="tech-tag">Netflix Eureka</span>
+              <span class="tech-tag">PostgreSQL</span>
+              <span class="tech-tag">MongoDB</span>
+              <span class="tech-tag">Redis</span>
+              <span class="tech-tag">Docker</span>
+            </div>
+          </article>
+
+          <!-- PROJECT 2: Secure Banking Application -->
+          <article class="project-card" data-category="fullstack">
+            <div class="project-header">
+              <div class="project-type-badge">
+                <i class="fa-solid fa-shield-halved"></i> Full Stack & Security
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/Santhosh-L-source/potfolio" target="_blank" rel="noopener noreferrer" class="icon-link" title="Source Code"><i class="fa-brands fa-github"></i></a>
+              </div>
+            </div>
+
+            <h3 class="project-title">Secure Enterprise Banking Application</h3>
+            <p class="project-summary">
+              A transactional full-stack banking platform built with Spring Boot, Spring Security, React, and MySQL, delivering ACID-compliant fund transfers and military-grade JWT authentication.
+            </p>
+
+            <ul class="project-features">
+              <li>
+                <i class="fa-solid fa-arrow-right-long"></i>
+                <span><strong>Stateless JWT Security:</strong> Implemented JSON Web Token authentication with custom filter chains and BCrypt cryptographic password hashing.</span>
+              </li>
+              <li>
+                <i class="fa-solid fa-arrow-right-long"></i>
+                <span><strong>ACID Financial Operations:</strong> Built transactional account operations covering deposits, withdrawals, and multi-party fund transfers with rollback guarantees.</span>
+              </li>
+              <li>
+                <i class="fa-solid fa-arrow-right-long"></i>
+                <span><strong>Clean Layered Architecture:</strong> Strict separation of concerns via Controller, Service, Repository, DTO, and Entity layers using Spring Data JPA and Hibernate.</span>
+              </li>
+              <li>
+                <i class="fa-solid fa-arrow-right-long"></i>
+                <span><strong>Interactive React Client:</strong> Designed responsive financial dashboards showing account balances, real-time transaction ledgers, and transfer wizards.</span>
+              </li>
+            </ul>
+
+            <div class="project-tech-stack">
+              <span class="tech-tag">Spring Boot</span>
+              <span class="tech-tag">Spring Security</span>
+              <span class="tech-tag">JWT</span>
+              <span class="tech-tag">React</span>
+              <span class="tech-tag">MySQL</span>
+              <span class="tech-tag">Spring Data JPA</span>
+              <span class="tech-tag">Hibernate</span>
+              <span class="tech-tag">REST API</span>
+            </div>
+          </article>
+
+          <!-- PROJECT 3: Quiz Game Application -->
+          <article class="project-card" data-category="frontend">
+            <div class="project-header">
+              <div class="project-type-badge">
+                <i class="fa-solid fa-gamepad"></i> Frontend Web App
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/Santhosh-L-source/potfolio" target="_blank" rel="noopener noreferrer" class="icon-link" title="Source Code"><i class="fa-brands fa-github"></i></a>
+              </div>
+            </div>
+
+            <h3 class="project-title">Dynamic Interactive Quiz Engine</h3>
+            <p class="project-summary">
+              An engaging, client-side web application developed with modular JavaScript, dynamic DOM manipulation, real-time score computation, and adaptive feedback loops.
+            </p>
+
+            <ul class="project-features">
+              <li>
+                <i class="fa-solid fa-arrow-right-long"></i>
+                <span><strong>Real-time State Calculation:</strong> Engineered instant answer evaluation, score aggregation, and streak tracking using clean JS array methods.</span>
+              </li>
+              <li>
+                <i class="fa-solid fa-arrow-right-long"></i>
+                <span><strong>Dynamic DOM Transitions:</strong> Seamless question transitions, timer animations, and instant visual feedback (green/red validation indicators).</span>
+              </li>
+              <li>
+                <i class="fa-solid fa-arrow-right-long"></i>
+                <span><strong>Responsive UI/UX:</strong> Cross-device responsive design engineered from scratch with semantic HTML5 and modern CSS animations.</span>
+              </li>
+            </ul>
+
+            <div class="project-tech-stack">
+              <span class="tech-tag">JavaScript (ES6+)</span>
+              <span class="tech-tag">DOM Manipulation</span>
+              <span class="tech-tag">CSS3 Animations</span>
+              <span class="tech-tag">HTML5</span>
+              <span class="tech-tag">Responsive Web Design</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CERTIFICATIONS & ACHIEVEMENTS SECTION -->
+    <section id="certifications" class="section certs-section">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">Continuous Learning</span>
+          <h2 class="section-title">Certifications & Achievements</h2>
+          <div class="title-underline"></div>
+          <p class="section-subtitle">Verified industry credentials and high-honor academic certifications.</p>
+        </div>
+
+        <div class="certs-grid">
+          <!-- Cert 1: Azure AI -->
+          <div class="cert-card" role="button" tabindex="0" data-cert="azure-ai">
+            <div class="cert-badge-icon azure-icon">
+              <i class="fa-brands fa-microsoft"></i>
+            </div>
+            <div class="cert-content">
+              <div class="cert-org">Microsoft</div>
+              <h3 class="cert-title">Microsoft Certified: Azure AI Fundamentals</h3>
+              <p class="cert-desc">Demonstrated foundational knowledge of machine learning and artificial intelligence concepts along with related Microsoft Azure services.</p>
+              <div class="cert-meta">
+                <span class="cert-date"><i class="fa-regular fa-calendar-check"></i> October 2026</span>
+                <span class="cert-view-btn"><i class="fa-solid fa-eye"></i> View Certificate</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cert 2: Oracle AI -->
+          <div class="cert-card" role="button" tabindex="0" data-cert="oracle-ai">
+            <div class="cert-badge-icon oracle-icon">
+              <i class="fa-solid fa-server"></i>
+            </div>
+            <div class="cert-content">
+              <div class="cert-org">Oracle</div>
+              <h3 class="cert-title">AI Foundations Associate</h3>
+              <p class="cert-desc">Mastered core concepts of Artificial Intelligence, Machine Learning models, and cloud infrastructure applications.</p>
+              <div class="cert-meta">
+                <span class="cert-date"><i class="fa-regular fa-calendar-check"></i> Credentialed</span>
+                <span class="cert-view-btn"><i class="fa-solid fa-eye"></i> View Certificate</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cert 3: NPTEL Algorithms (Elite Silver) -->
+          <div class="cert-card highlight-cert" role="button" tabindex="0" data-cert="nptel-algo">
+            <div class="cert-badge-icon nptel-icon silver">
+              <i class="fa-solid fa-medal"></i>
+            </div>
+            <div class="cert-content">
+              <div class="cert-org">NPTEL / IIT</div>
+              <h3 class="cert-title">Fundamental Algorithms: Design & Analysis</h3>
+              <span class="cert-honor-pill silver-pill">Elite Silver Award</span>
+              <p class="cert-desc">Rigorous theoretical and algorithmic coursework covering divide-and-conquer, dynamic programming, graph algorithms, and asymptotic complexity.</p>
+              <div class="cert-meta">
+                <span class="cert-status verified"><i class="fa-solid fa-circle-check"></i> Elite Silver</span>
+                <span class="cert-view-btn"><i class="fa-solid fa-eye"></i> View Certificate</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cert 4: NPTEL DBMS (Elite) -->
+          <div class="cert-card" role="button" tabindex="0" data-cert="nptel-dbms">
+            <div class="cert-badge-icon nptel-icon">
+              <i class="fa-solid fa-database"></i>
+            </div>
+            <div class="cert-content">
+              <div class="cert-org">NPTEL / IIT</div>
+              <h3 class="cert-title">Database Management System</h3>
+              <span class="cert-honor-pill elite-pill">Elite Award</span>
+              <p class="cert-desc">Comprehensive mastery of relational database design, normalization, relational algebra, SQL transactions, concurrency control, and indexing.</p>
+              <div class="cert-meta">
+                <span class="cert-status verified"><i class="fa-solid fa-circle-check"></i> Elite Award</span>
+                <span class="cert-view-btn"><i class="fa-solid fa-eye"></i> View Certificate</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cert 5: NPTEL Python Data Science (Elite) -->
+          <div class="cert-card" role="button" tabindex="0" data-cert="nptel-python">
+            <div class="cert-badge-icon nptel-icon">
+              <i class="fa-brands fa-python"></i>
+            </div>
+            <div class="cert-content">
+              <div class="cert-org">NPTEL / IIT</div>
+              <h3 class="cert-title">Python for Data Science</h3>
+              <span class="cert-honor-pill elite-pill">Elite Award</span>
+              <p class="cert-desc">Covered data processing pipelines, mathematical analysis, and structured computational programming using Python.</p>
+              <div class="cert-meta">
+                <span class="cert-status verified"><i class="fa-solid fa-circle-check"></i> Elite Award</span>
+                <span class="cert-view-btn"><i class="fa-solid fa-eye"></i> View Certificate</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cert 6: Infosys Springboard Java -->
+          <div class="cert-card" role="button" tabindex="0" data-cert="infosys-java">
+            <div class="cert-badge-icon infosys-icon">
+              <i class="fa-brands fa-java"></i>
+            </div>
+            <div class="cert-content">
+              <div class="cert-org">Infosys Springboard</div>
+              <h3 class="cert-title">Java Programming Fundamentals</h3>
+              <p class="cert-desc">Deep-dive into Object-Oriented design patterns, exception handling, multithreading, Collections framework, and modern Java syntax.</p>
+              <div class="cert-meta">
+                <span class="cert-date"><i class="fa-regular fa-calendar-check"></i> Certified</span>
+                <span class="cert-view-btn"><i class="fa-solid fa-eye"></i> View Certificate</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION SECTION -->
+    <section id="education" class="section education-section">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">Academic Background</span>
+          <h2 class="section-title">Education</h2>
+          <div class="title-underline"></div>
+        </div>
+
+        <div class="edu-grid">
+          <!-- College -->
+          <div class="edu-card">
+            <div class="edu-card-side">
+              <div class="edu-icon-circle">
+                <i class="fa-solid fa-graduation-cap"></i>
+              </div>
+              <div class="edu-timeline-bar"></div>
+            </div>
+            <div class="edu-card-main">
+              <div class="edu-meta-top">
+                <span class="edu-badge"><i class="fa-regular fa-calendar"></i> Aug 2024 – May 2028</span>
+                <span class="edu-location"><i class="fa-solid fa-location-dot"></i> Chennai, India</span>
+              </div>
+              <h3 class="edu-degree">Bachelor of Engineering (B.E.) in Computer Science & Engineering</h3>
+              <h4 class="edu-institution">St. Joseph’s College of Engineering</h4>
+              
+              <div class="edu-highlight-box">
+                <span class="cgpa-label">Academic Performance</span>
+                <span class="cgpa-val">CGPA: 8.32 / 10.0</span>
+              </div>
+
+              <p class="edu-description">
+                Engaged in deep coursework including Data Structures & Algorithms, Object-Oriented Software Engineering, Database Systems, Computer Networks, and Operating Systems. Actively designing distributed backend systems and full-stack solutions.
+              </p>
+            </div>
+          </div>
+
+          <!-- High School -->
+          <div class="edu-card">
+            <div class="edu-card-side">
+              <div class="edu-icon-circle">
+                <i class="fa-solid fa-school"></i>
+              </div>
+            </div>
+            <div class="edu-card-main">
+              <div class="edu-meta-top">
+                <span class="edu-badge"><i class="fa-regular fa-calendar"></i> 2022 – 2024</span>
+                <span class="edu-location"><i class="fa-solid fa-location-dot"></i> Chennai, India</span>
+              </div>
+              <h3 class="edu-degree">Higher Secondary Certificate (HSC) & SSLC</h3>
+              <h4 class="edu-institution">Nellai Nadar Matriculation Higher Secondary School</h4>
+              
+              <div class="edu-stats-row">
+                <div class="edu-stat-item">
+                  <span class="stat-grade">89.3%</span>
+                  <span class="stat-name">12th Grade (HSC)</span>
+                </div>
+                <div class="edu-stat-item">
+                  <span class="stat-grade">86.4%</span>
+                  <span class="stat-name">10th Grade (SSLC)</span>
+                </div>
+              </div>
+
+              <p class="edu-description">
+                Solid foundational education in Mathematics, Physics, Chemistry, and Computer Science with distinguished academic percentages across secondary examinations.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="section contact-section">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">Direct Connect</span>
+          <h2 class="section-title">Get In Touch</h2>
+          <div class="title-underline"></div>
+          <p class="section-subtitle">
+            I am actively seeking software internships, developer opportunities, and project collaborations. Feel free to contact me directly!
+          </p>
+        </div>
+
+        <div class="student-contact-container">
+          <div class="student-contact-grid">
+            <!-- Email Card -->
+            <a href="mailto:santhosh120122006@gmail.com" class="student-contact-card">
+              <div class="s-card-icon email-icon">
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+              <div class="s-card-info">
+                <h4>Email Address</h4>
+                <p>santhosh120122006@gmail.com</p>
+                <span class="s-card-action">Send an Email &rarr;</span>
+              </div>
+            </a>
+
+            <!-- Phone Card -->
+            <a href="tel:+917094431771" class="student-contact-card">
+              <div class="s-card-icon phone-icon">
+                <i class="fa-solid fa-phone"></i>
+              </div>
+              <div class="s-card-info">
+                <h4>Phone / WhatsApp</h4>
+                <p>+91 7094431771</p>
+                <span class="s-card-action">Call or Message &rarr;</span>
+              </div>
+            </a>
+
+            <!-- LinkedIn Card -->
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="student-contact-card">
+              <div class="s-card-icon linkedin-icon">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </div>
+              <div class="s-card-info">
+                <h4>LinkedIn</h4>
+                <p>Connect Professionally</p>
+                <span class="s-card-action">View LinkedIn Profile &rarr;</span>
+              </div>
+            </a>
+
+            <!-- GitHub Card -->
+            <a href="https://github.com/Santhosh-L-source" target="_blank" rel="noopener noreferrer" class="student-contact-card">
+              <div class="s-card-icon github-icon">
+                <i class="fa-brands fa-github"></i>
+              </div>
+              <div class="s-card-info">
+                <h4>GitHub</h4>
+                <p>Explore My Code</p>
+                <span class="s-card-action">Browse Repositories &rarr;</span>
+              </div>
+            </a>
+
+            <!-- LeetCode Card -->
+            <a href="https://leetcode.com" target="_blank" rel="noopener noreferrer" class="student-contact-card">
+              <div class="s-card-icon leetcode-icon">
+                <i class="fa-solid fa-code"></i>
+              </div>
+              <div class="s-card-info">
+                <h4>LeetCode</h4>
+                <p>Data Structures & Algorithms</p>
+                <span class="s-card-action">View Problem Solving &rarr;</span>
+              </div>
+            </a>
+
+            <!-- Location Card -->
+            <div class="student-contact-card static-card">
+              <div class="s-card-icon location-icon">
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <div class="s-card-info">
+                <h4>Current Location</h4>
+                <p>Chennai, Tamil Nadu, India</p>
+                <span class="s-card-badge">Open to Remote & Onsite</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quick Action Buttons -->
+          <div class="student-actions-bar">
+            <a href="mailto:santhosh120122006@gmail.com" class="btn btn-primary">
+              <i class="fa-solid fa-paper-plane"></i> Email Me Directly
+            </a>
+            <button class="btn btn-outline" onclick="copyToClipboard('santhosh120122006@gmail.com', this)">
+              <i class="fa-regular fa-copy"></i> Copy Email
+            </button>
+            <button class="btn btn-outline" onclick="copyToClipboard('+917094431771', this)">
+              <i class="fa-solid fa-copy"></i> Copy Phone
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#hero" class="nav-logo">
+            <span class="logo-bracket">&lt;</span>
+            <span class="logo-text">Santhosh<span class="accent-dot">.L</span></span>
+            <span class="logo-bracket">/&gt;</span>
+          </a>
+          <p class="footer-tagline">B.E. Computer Science & Engineering @ St. Joseph's College of Engineering. Building full-stack web applications & backend services.</p>
+        </div>
+
+        <div class="footer-links-group">
+          <h4>Quick Navigation</h4>
+          <div class="footer-links">
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#certifications">Certifications</a>
+            <a href="#education">Education</a>
+            <a href="#contact">Contact</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <span id="current-year"></span> Santhosh L. All rights reserved. Crafted with clean architecture & code.</p>
+        <button id="scroll-to-top" class="scroll-top-btn" title="Back to top">
+          <i class="fa-solid fa-arrow-up"></i>
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Certificate Details Modal -->
+  <div id="cert-modal" class="modal-backdrop" aria-hidden="true">
+    <div class="modal-dialog cert-modal-dialog">
+      <div class="modal-header">
+        <div class="modal-title-group">
+          <i class="fa-solid fa-award text-accent"></i>
+          <h3 class="modal-title" id="cert-modal-org">Certificate Credential</h3>
+        </div>
+        <button id="close-cert-modal" class="modal-close-btn" aria-label="Close Certificate Details">&times;</button>
+      </div>
+
+      <div class="modal-body">
+        <div class="cert-modal-header-row">
+          <div id="cert-modal-icon" class="cert-badge-icon"></div>
+          <div>
+            <h4 id="cert-modal-title" class="cert-modal-title"></h4>
+            <span id="cert-modal-badge" class="cert-modal-badge"></span>
+          </div>
+        </div>
+
+        <p id="cert-modal-desc" class="cert-modal-desc"></p>
+
+        <div class="cert-modal-info-box">
+          <div class="cert-modal-info-item">
+            <span class="info-lbl">Issuing Authority</span>
+            <span id="cert-modal-issuer" class="info-val"></span>
+          </div>
+          <div class="cert-modal-info-item">
+            <span class="info-lbl">Recipient</span>
+            <span class="info-val">Santhosh L</span>
+          </div>
+          <div class="cert-modal-info-item">
+            <span class="info-lbl">Issued / Status</span>
+            <span id="cert-modal-date" class="info-val"></span>
+          </div>
+          <div class="cert-modal-info-item">
+            <span class="info-lbl">Credential Verification</span>
+            <span class="info-val verified-text"><i class="fa-solid fa-circle-check"></i> Authenticated</span>
+          </div>
+        </div>
+
+        <div class="cert-modal-topics-section">
+          <h5>Core Competencies Validated:</h5>
+          <div id="cert-modal-topics" class="cert-topics-list"></div>
+        </div>
+
+        <div class="cert-modal-actions">
+          <button id="close-cert-btn" class="btn btn-primary w-full">Close Preview</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast notification for copy clipboard -->
+  <div id="toast" class="toast">Copied to clipboard!</div>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
