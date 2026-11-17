@@ -907,13 +907,17 @@
                 </div>
               </div>
               <h3 class="cert-title">AI Foundations Associate</h3>
-              <span class="cert-honor-pill oracle-pill"><i class="fa-solid fa-certificate"></i> Certified Associate</span>
+              <div class="pill-group">
+                <span class="cert-honor-pill oracle-pill"><i class="fa-solid fa-certificate"></i> Certified Associate</span>
+                <span class="cert-honor-pill pending-pill"><i class="fa-regular fa-clock"></i> PDF Pending Upload</span>
+              </div>
               <p class="cert-desc">Mastered core concepts of Artificial Intelligence, Machine Learning models, and cloud infrastructure applications.</p>
               
               <div class="cert-card-btn-row">
                 <button type="button" class="btn btn-sm btn-outline open-modal-trigger" data-cert="oracle-ai">
                   <i class="fa-solid fa-eye"></i> View Details
                 </button>
+                <span class="pending-note"><i class="fa-solid fa-info-circle"></i> PDF pending upload</span>
               </div>
             </div>
           </div>
@@ -931,13 +935,17 @@
                 </div>
               </div>
               <h3 class="cert-title">Java Programming Fundamentals</h3>
-              <span class="cert-honor-pill infosys-pill"><i class="fa-solid fa-certificate"></i> Certified</span>
+              <div class="pill-group">
+                <span class="cert-honor-pill infosys-pill"><i class="fa-solid fa-certificate"></i> Certified</span>
+                <span class="cert-honor-pill pending-pill"><i class="fa-regular fa-clock"></i> PDF Pending Upload</span>
+              </div>
               <p class="cert-desc">Deep-dive into Object-Oriented design patterns, exception handling, multithreading, Collections framework, and modern Java syntax.</p>
               
               <div class="cert-card-btn-row">
                 <button type="button" class="btn btn-sm btn-outline open-modal-trigger" data-cert="infosys-java">
                   <i class="fa-solid fa-eye"></i> View Details
                 </button>
+                <span class="pending-note"><i class="fa-solid fa-info-circle"></i> PDF pending upload</span>
               </div>
             </div>
           </div>
@@ -1186,6 +1194,15 @@
           </div>
           <div class="cert-modal-img-frame">
             <img id="cert-modal-img" src="" alt="Certificate Document Preview" class="cert-preview-img">
+          </div>
+        </div>
+
+        <!-- Pending Certificate Notice (shown for Oracle & Infosys where PDF is pending upload) -->
+        <div id="cert-modal-pending-notice" class="cert-modal-pending-notice" style="display: none;">
+          <div class="pending-notice-icon"><i class="fa-solid fa-file-circle-question"></i></div>
+          <div class="pending-notice-text">
+            <strong>Certificate PDF Document Pending Upload</strong>
+            <p>This certification is recorded on Santhosh's academic resume. The official PDF credential file has not been uploaded to the website yet.</p>
           </div>
         </div>
 

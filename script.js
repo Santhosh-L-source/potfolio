@@ -299,6 +299,7 @@ function initCertificatesModal() {
   const modalTopics = document.getElementById('cert-modal-topics');
 
   const modalImgContainer = document.getElementById('cert-modal-img-container');
+  const modalPendingNotice = document.getElementById('cert-modal-pending-notice');
   const modalImgLink = document.getElementById('cert-modal-img-link');
   const modalImg = document.getElementById('cert-modal-img');
   const modalPdfLink = document.getElementById('cert-modal-pdf-link');
@@ -401,19 +402,21 @@ function initCertificatesModal() {
     modalIcon.className = `cert-badge-icon ${data.iconClass || 'nptel-icon'}`;
     modalIcon.innerHTML = data.iconHtml || '<i class="fa-solid fa-award"></i>';
 
-    // Image preview handling
-    if (modalImgContainer && modalImg) {
-      if (data.imgUrl) {
+    // Image preview & pending notice handling
+    if (data.imgUrl) {
+      if (modalImgContainer) modalImgContainer.style.display = 'block';
+      if (modalPendingNotice) modalPendingNotice.style.display = 'none';
+      if (modalImg) {
         modalImg.src = data.imgUrl;
         modalImg.alt = `${data.title} Preview`;
-        if (modalImgLink) {
-          modalImgLink.href = data.pdfUrl || data.imgUrl;
-        }
-        modalImgContainer.style.display = 'block';
-      } else {
-        modalImg.src = '';
-        modalImgContainer.style.display = 'none';
       }
+      if (modalImgLink) {
+        modalImgLink.href = data.pdfUrl || data.imgUrl;
+      }
+    } else {
+      if (modalImgContainer) modalImgContainer.style.display = 'none';
+      if (modalPendingNotice) modalPendingNotice.style.display = 'flex';
+      if (modalImg) modalImg.src = '';
     }
 
     // PDF link handling

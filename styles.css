@@ -2370,3 +2370,52 @@ body {
   color: #38bdf8;
   border: 1px solid rgba(14, 165, 233, 0.3);
 }
+
+.pending-pill {
+  background: rgba(245, 158, 11, 0.12);
+  color: #f59e0b;
+  border: 1px solid rgba(245, 158, 11, 0.3);
+  font-size: 0.72rem;
+  font-weight: 600;
+}
+
+.pending-note {
+  font-size: 0.74rem;
+  color: var(--text-muted);
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-style: italic;
+}
+
+.cert-modal-pending-notice {
+  margin: 16px 0 20px 0;
+  border-radius: var(--radius-md);
+  padding: 18px;
+  background: rgba(245, 158, 11, 0.08);
+  border: 1px dashed rgba(245, 158, 11, 0.35);
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+}
+
+.pending-notice-icon {
+  font-size: 1.8rem;
+  color: #f59e0b;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.pending-notice-text strong {
+  display: block;
+  font-size: 0.95rem;
+  color: var(--text-primary);
+  margin-bottom: 4px;
+}
+
+.pending-notice-text p {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+  margin: 0;
+}
