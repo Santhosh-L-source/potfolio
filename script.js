@@ -298,63 +298,78 @@ function initCertificatesModal() {
   const modalDate = document.getElementById('cert-modal-date');
   const modalTopics = document.getElementById('cert-modal-topics');
 
+  const modalImgContainer = document.getElementById('cert-modal-img-container');
+  const modalImgLink = document.getElementById('cert-modal-img-link');
+  const modalImg = document.getElementById('cert-modal-img');
+  const modalPdfLink = document.getElementById('cert-modal-pdf-link');
+  const modalVerifyLink = document.getElementById('cert-modal-verify-link');
+
   if (!modal) return;
 
   const certificatesData = {
     'azure-ai': {
       org: 'Microsoft Certified',
       title: 'Microsoft Certified: Azure AI Fundamentals',
-      badge: 'Official Microsoft Credential',
-      issuer: 'Microsoft',
-      date: 'October 2026',
+      badge: 'Official Microsoft Credential (ID: 8DCC1A32263C3FD)',
+      issuer: 'Microsoft Corporation',
+      date: 'Earned October 16, 2026',
       iconClass: 'azure-icon',
       iconHtml: '<i class="fa-brands fa-microsoft"></i>',
-      desc: 'Demonstrated foundational knowledge of machine learning workloads, artificial intelligence concepts, computer vision, natural language processing, and conversational AI services on the Microsoft Azure cloud ecosystem.',
-      topics: ['Machine Learning Foundations', 'Azure Cognitive Services', 'Computer Vision Workloads', 'Natural Language Processing (NLP)', 'Conversational AI & Bots', 'Responsible AI Framework']
+      pdfUrl: 'certificates/Azure_AI_Fundamentals_Microsoft.pdf',
+      imgUrl: 'certificates/azure_ai_cert.png',
+      verifyUrl: 'https://learn.microsoft.com/en-us/users/santhosh-3585/credentials/certification/azure-ai-fundamentals?tab=credentials-tab',
+      desc: 'Demonstrated fundamental knowledge of machine learning workloads and core artificial intelligence concepts, computer vision, natural language processing (NLP), and generative/conversational AI on Microsoft Azure.',
+      topics: ['Azure AI Workloads & Principles', 'Machine Learning Foundations', 'Computer Vision on Azure', 'Natural Language Processing (NLP)', 'Azure OpenAI & Conversational AI', 'Responsible AI Practices']
+    },
+    'nptel-algo': {
+      org: 'IIT Kharagpur • NPTEL',
+      title: 'Fundamental Algorithms: Design and Analysis',
+      badge: 'Elite Silver Award • Score: 75%',
+      issuer: 'NPTEL (Funded by MoE, Govt. of India)',
+      date: 'Jan–Feb 2026 (Roll: NPTEL26CS42S653406569)',
+      pdfUrl: 'certificates/Fundamental_Algorithms_NPTEL.pdf',
+      imgUrl: 'certificates/algorithms_cert.png',
+      verifyUrl: '',
+      desc: 'Awarded Elite Silver distinction with a consolidated score of 75% (Assignments: 22.5/25, Proctored Exam: 52.5/75) among 1,818 certified candidates nationwide. Demonstrates high-tier algorithmic proficiency.',
+      topics: ['Asymptotic Complexity & Big-O Notation', 'Divide-and-Conquer Recurrences', 'Dynamic Programming Optimization', 'Greedy Algorithmic Strategies', 'Graph Traversal (BFS, DFS, Dijkstra)', 'Theoretical Algorithmic Proofs']
+    },
+    'nptel-dbms': {
+      org: 'IIT Kharagpur • NPTEL',
+      title: 'Database Management System',
+      badge: 'Top 5% Topper & Elite Award • Score: 73%',
+      issuer: 'NPTEL (Funded by MoE, Govt. of India)',
+      date: 'Jul–Sep 2026 (Roll: NPTEL26CS117S353501242)',
+      pdfUrl: 'certificates/Database_Management_System_NPTEL.pdf',
+      imgUrl: 'certificates/dbms_cert.png',
+      verifyUrl: '',
+      desc: 'Ranked in the prestigious Top 5% Topper bracket nationwide with an Elite distinction score of 73% (Assignments: 24.38/25, Proctored Exam: 48/75) out of 7,698 certified candidates.',
+      topics: ['Relational Model & Relational Algebra', 'Advanced SQL & Complex Nested Queries', 'Schema Normalization (1NF through BCNF)', 'ACID Transactions & Serializability', 'Concurrency Control & Locking Protocols', 'B+ Tree Indexing & Query Optimization']
+    },
+    'nptel-python': {
+      org: 'IIT Madras • NPTEL',
+      title: 'Python for Data Science',
+      badge: 'Elite Award • Perfect 25/25 in Assignments',
+      issuer: 'NPTEL (Funded by MoE, Govt. of India)',
+      date: 'Jan–Feb 2025 (Roll: NPTEL25CS60S243301973)',
+      pdfUrl: 'certificates/Python_for_Data_Science_NPTEL.pdf',
+      imgUrl: 'certificates/python_cert.png',
+      verifyUrl: '',
+      desc: 'Achieved Elite certification with a 100% score on all coursework assignments (25/25) among 15,251 candidates across India. Thoroughly covers data preprocessing, array manipulation, and statistical data visualization.',
+      topics: ['NumPy Multidimensional Computing', 'Pandas DataFrame Transformations', 'Data Cleaning & Preprocessing Pipelines', 'Statistical Data Analysis', 'Exploratory Visualization (Matplotlib)', 'Predictive Modeling Foundations']
     },
     'oracle-ai': {
       org: 'Oracle University',
       title: 'AI Foundations Associate',
       badge: 'Oracle Certified Associate',
       issuer: 'Oracle Corporation',
-      date: 'Verified Credential',
+      date: 'Certified Associate',
       iconClass: 'oracle-icon',
       iconHtml: '<i class="fa-solid fa-server"></i>',
+      pdfUrl: '',
+      imgUrl: '',
+      verifyUrl: '',
       desc: 'Mastered foundational and architectural concepts of Artificial Intelligence, Machine Learning algorithms, deep neural network modeling, and enterprise AI workloads deployed across Oracle Cloud Infrastructure.',
       topics: ['Artificial Intelligence Foundations', 'Supervised & Unsupervised Learning', 'Deep Learning & Neural Networks', 'Oracle Cloud Infrastructure AI', 'Enterprise AI Deployment']
-    },
-    'nptel-algo': {
-      org: 'NPTEL / IIT',
-      title: 'Fundamental Algorithms: Design & Analysis',
-      badge: 'Elite Silver Award (Top Tier)',
-      issuer: 'NPTEL (IIT Madras / Kharagpur)',
-      date: 'Elite Silver Certified',
-      iconClass: 'nptel-icon silver',
-      iconHtml: '<i class="fa-solid fa-medal"></i>',
-      desc: 'Achieved distinguished Elite Silver honors in advanced algorithm design and asymptotic analysis, covering theoretical proof structures, recurrence relations, divide-and-conquer, dynamic programming, and complex graph algorithms.',
-      topics: ['Asymptotic Complexity & Big-O', 'Divide-and-Conquer Algorithms', 'Dynamic Programming Optimization', 'Greedy Algorithmic Strategies', 'Graph Traversal (BFS, DFS, Dijkstra)', 'Theoretical Algorithm Proofs']
-    },
-    'nptel-dbms': {
-      org: 'NPTEL / IIT',
-      title: 'Database Management System',
-      badge: 'Elite Award',
-      issuer: 'NPTEL (IIT Kharagpur)',
-      date: 'Elite Certified',
-      iconClass: 'nptel-icon',
-      iconHtml: '<i class="fa-solid fa-database"></i>',
-      desc: 'Mastered fundamental and advanced principles of database design, relational algebra, SQL optimization, schema normalization up to BCNF, concurrency control protocols, transaction management, and indexing structures.',
-      topics: ['Relational Algebra & Tuple Calculus', 'Complex SQL Queries & Joins', 'Database Normalization (1NF to BCNF)', 'ACID Transactions & Recovery', 'Concurrency Control & Locking', 'B+ Tree Indexing & Query Tuning']
-    },
-    'nptel-python': {
-      org: 'NPTEL / IIT',
-      title: 'Python for Data Science',
-      badge: 'Elite Award',
-      issuer: 'NPTEL (IIT Madras)',
-      date: 'Elite Certified',
-      iconClass: 'nptel-icon',
-      iconHtml: '<i class="fa-brands fa-python"></i>',
-      desc: 'Completed comprehensive rigorous training on data processing pipelines, mathematical array computing with NumPy, structured data manipulation with Pandas, statistical hypothesis testing, and exploratory data visualization.',
-      topics: ['NumPy Multidimensional Computing', 'Pandas DataFrame Transformations', 'Data Cleaning & Preprocessing', 'Statistical Data Analysis', 'Exploratory Visualization (Matplotlib/Seaborn)', 'Predictive Modeling Foundations']
     },
     'infosys-java': {
       org: 'Infosys Springboard',
@@ -364,6 +379,9 @@ function initCertificatesModal() {
       date: 'Certified',
       iconClass: 'infosys-icon',
       iconHtml: '<i class="fa-brands fa-java"></i>',
+      pdfUrl: '',
+      imgUrl: '',
+      verifyUrl: '',
       desc: 'Rigorous deep-dive into Core Java, Object-Oriented software engineering patterns, multithreaded concurrent execution, custom exception management architectures, and the Java Collections Framework.',
       topics: ['OOP (Encapsulation, Polymorphism, Inheritance)', 'Java Collections (List, Set, Map, Queue)', 'Multithreading & Concurrency', 'Exception Handling & Custom Exceptions', 'Java Memory Management & Garbage Collection']
     }
@@ -380,9 +398,45 @@ function initCertificatesModal() {
     modalDate.textContent = data.date;
     modalDesc.textContent = data.desc;
 
-    modalIcon.className = `cert-badge-icon ${data.iconClass}`;
-    modalIcon.innerHTML = data.iconHtml;
+    modalIcon.className = `cert-badge-icon ${data.iconClass || 'nptel-icon'}`;
+    modalIcon.innerHTML = data.iconHtml || '<i class="fa-solid fa-award"></i>';
 
+    // Image preview handling
+    if (modalImgContainer && modalImg) {
+      if (data.imgUrl) {
+        modalImg.src = data.imgUrl;
+        modalImg.alt = `${data.title} Preview`;
+        if (modalImgLink) {
+          modalImgLink.href = data.pdfUrl || data.imgUrl;
+        }
+        modalImgContainer.style.display = 'block';
+      } else {
+        modalImg.src = '';
+        modalImgContainer.style.display = 'none';
+      }
+    }
+
+    // PDF link handling
+    if (modalPdfLink) {
+      if (data.pdfUrl) {
+        modalPdfLink.href = data.pdfUrl;
+        modalPdfLink.style.display = 'inline-flex';
+      } else {
+        modalPdfLink.style.display = 'none';
+      }
+    }
+
+    // Verification link handling
+    if (modalVerifyLink) {
+      if (data.verifyUrl) {
+        modalVerifyLink.href = data.verifyUrl;
+        modalVerifyLink.style.display = 'inline-flex';
+      } else {
+        modalVerifyLink.style.display = 'none';
+      }
+    }
+
+    // Topics tags
     modalTopics.innerHTML = '';
     data.topics.forEach(topic => {
       const tag = document.createElement('span');

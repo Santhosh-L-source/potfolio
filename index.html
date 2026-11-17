@@ -126,7 +126,8 @@
             <div class="profile-card-header">
               <div class="profile-avatar-wrapper">
                 <div class="profile-avatar-circle">
-                  <span class="avatar-initials">SL</span>
+                  <img src="profile.png" alt="Santhosh L" class="avatar-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                  <span class="avatar-initials" style="display:none;">SL</span>
                 </div>
                 <span class="avatar-status-badge" title="Actively Seeking Opportunities"></span>
               </div>
@@ -769,17 +770,72 @@
               <i class="fa-brands fa-microsoft"></i>
             </div>
             <div class="cert-content">
-              <div class="cert-org">Microsoft</div>
+              <div class="cert-org">Microsoft Certified</div>
               <h3 class="cert-title">Microsoft Certified: Azure AI Fundamentals</h3>
-              <p class="cert-desc">Demonstrated foundational knowledge of machine learning and artificial intelligence concepts along with related Microsoft Azure services.</p>
+              <span class="cert-honor-pill azure-pill"><i class="fa-solid fa-award"></i> Credential ID: 8DCC1A32263C3FD</span>
+              <p class="cert-desc">Official Microsoft certification validating machine learning, natural language processing, computer vision, and cloud AI services.</p>
               <div class="cert-meta">
-                <span class="cert-date"><i class="fa-regular fa-calendar-check"></i> October 2026</span>
+                <span class="cert-date"><i class="fa-regular fa-calendar-check"></i> Earned Oct 16, 2026</span>
                 <span class="cert-view-btn"><i class="fa-solid fa-eye"></i> View Certificate</span>
               </div>
             </div>
           </div>
 
-          <!-- Cert 2: Oracle AI -->
+          <!-- Cert 2: NPTEL Algorithms (Elite Silver) -->
+          <div class="cert-card highlight-cert" role="button" tabindex="0" data-cert="nptel-algo">
+            <div class="cert-badge-icon nptel-icon silver">
+              <i class="fa-solid fa-medal"></i>
+            </div>
+            <div class="cert-content">
+              <div class="cert-org">IIT Kharagpur &bull; NPTEL</div>
+              <h3 class="cert-title">Fundamental Algorithms: Design & Analysis</h3>
+              <span class="cert-honor-pill silver-pill"><i class="fa-solid fa-medal"></i> Elite Silver Award &bull; Score: 75%</span>
+              <p class="cert-desc">Rigorous coursework in asymptotic analysis, divide-and-conquer, dynamic programming, and graph algorithms (Roll: NPTEL26CS42S653406569).</p>
+              <div class="cert-meta">
+                <span class="cert-date"><i class="fa-regular fa-calendar"></i> Jan–Feb 2026</span>
+                <span class="cert-view-btn"><i class="fa-solid fa-eye"></i> View Certificate</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cert 3: NPTEL DBMS (Elite + Top 5%) -->
+          <div class="cert-card highlight-cert" role="button" tabindex="0" data-cert="nptel-dbms">
+            <div class="cert-badge-icon nptel-icon">
+              <i class="fa-solid fa-database"></i>
+            </div>
+            <div class="cert-content">
+              <div class="cert-org">IIT Kharagpur &bull; NPTEL</div>
+              <h3 class="cert-title">Database Management System</h3>
+              <div class="pill-group">
+                <span class="cert-honor-pill topper-pill"><i class="fa-solid fa-trophy"></i> Top 5% Topper</span>
+                <span class="cert-honor-pill elite-pill">Elite &bull; Score: 73%</span>
+              </div>
+              <p class="cert-desc">Mastered relational algebra, SQL optimization, schema normalization up to BCNF, and ACID transactions (Roll: NPTEL26CS117S353501242).</p>
+              <div class="cert-meta">
+                <span class="cert-date"><i class="fa-regular fa-calendar"></i> Jul–Sep 2026</span>
+                <span class="cert-view-btn"><i class="fa-solid fa-eye"></i> View Certificate</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cert 4: NPTEL Python Data Science (Elite) -->
+          <div class="cert-card" role="button" tabindex="0" data-cert="nptel-python">
+            <div class="cert-badge-icon nptel-icon">
+              <i class="fa-brands fa-python"></i>
+            </div>
+            <div class="cert-content">
+              <div class="cert-org">IIT Madras &bull; NPTEL</div>
+              <h3 class="cert-title">Python for Data Science</h3>
+              <span class="cert-honor-pill elite-pill"><i class="fa-solid fa-certificate"></i> Elite Award &bull; 25/25 Assignments</span>
+              <p class="cert-desc">Data processing pipelines, mathematical array computing with NumPy, and structured data handling with Pandas (Roll: NPTEL25CS60S243301973).</p>
+              <div class="cert-meta">
+                <span class="cert-date"><i class="fa-regular fa-calendar"></i> Jan–Feb 2025</span>
+                <span class="cert-view-btn"><i class="fa-solid fa-eye"></i> View Certificate</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cert 5: Oracle AI -->
           <div class="cert-card" role="button" tabindex="0" data-cert="oracle-ai">
             <div class="cert-badge-icon oracle-icon">
               <i class="fa-solid fa-server"></i>
@@ -787,60 +843,10 @@
             <div class="cert-content">
               <div class="cert-org">Oracle</div>
               <h3 class="cert-title">AI Foundations Associate</h3>
+              <span class="cert-honor-pill oracle-pill"><i class="fa-solid fa-certificate"></i> Certified Associate</span>
               <p class="cert-desc">Mastered core concepts of Artificial Intelligence, Machine Learning models, and cloud infrastructure applications.</p>
               <div class="cert-meta">
                 <span class="cert-date"><i class="fa-regular fa-calendar-check"></i> Credentialed</span>
-                <span class="cert-view-btn"><i class="fa-solid fa-eye"></i> View Certificate</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Cert 3: NPTEL Algorithms (Elite Silver) -->
-          <div class="cert-card highlight-cert" role="button" tabindex="0" data-cert="nptel-algo">
-            <div class="cert-badge-icon nptel-icon silver">
-              <i class="fa-solid fa-medal"></i>
-            </div>
-            <div class="cert-content">
-              <div class="cert-org">NPTEL / IIT</div>
-              <h3 class="cert-title">Fundamental Algorithms: Design & Analysis</h3>
-              <span class="cert-honor-pill silver-pill">Elite Silver Award</span>
-              <p class="cert-desc">Rigorous theoretical and algorithmic coursework covering divide-and-conquer, dynamic programming, graph algorithms, and asymptotic complexity.</p>
-              <div class="cert-meta">
-                <span class="cert-status verified"><i class="fa-solid fa-circle-check"></i> Elite Silver</span>
-                <span class="cert-view-btn"><i class="fa-solid fa-eye"></i> View Certificate</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Cert 4: NPTEL DBMS (Elite) -->
-          <div class="cert-card" role="button" tabindex="0" data-cert="nptel-dbms">
-            <div class="cert-badge-icon nptel-icon">
-              <i class="fa-solid fa-database"></i>
-            </div>
-            <div class="cert-content">
-              <div class="cert-org">NPTEL / IIT</div>
-              <h3 class="cert-title">Database Management System</h3>
-              <span class="cert-honor-pill elite-pill">Elite Award</span>
-              <p class="cert-desc">Comprehensive mastery of relational database design, normalization, relational algebra, SQL transactions, concurrency control, and indexing.</p>
-              <div class="cert-meta">
-                <span class="cert-status verified"><i class="fa-solid fa-circle-check"></i> Elite Award</span>
-                <span class="cert-view-btn"><i class="fa-solid fa-eye"></i> View Certificate</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Cert 5: NPTEL Python Data Science (Elite) -->
-          <div class="cert-card" role="button" tabindex="0" data-cert="nptel-python">
-            <div class="cert-badge-icon nptel-icon">
-              <i class="fa-brands fa-python"></i>
-            </div>
-            <div class="cert-content">
-              <div class="cert-org">NPTEL / IIT</div>
-              <h3 class="cert-title">Python for Data Science</h3>
-              <span class="cert-honor-pill elite-pill">Elite Award</span>
-              <p class="cert-desc">Covered data processing pipelines, mathematical analysis, and structured computational programming using Python.</p>
-              <div class="cert-meta">
-                <span class="cert-status verified"><i class="fa-solid fa-circle-check"></i> Elite Award</span>
                 <span class="cert-view-btn"><i class="fa-solid fa-eye"></i> View Certificate</span>
               </div>
             </div>
@@ -854,6 +860,7 @@
             <div class="cert-content">
               <div class="cert-org">Infosys Springboard</div>
               <h3 class="cert-title">Java Programming Fundamentals</h3>
+              <span class="cert-honor-pill infosys-pill"><i class="fa-solid fa-certificate"></i> Certified</span>
               <p class="cert-desc">Deep-dive into Object-Oriented design patterns, exception handling, multithreading, Collections framework, and modern Java syntax.</p>
               <div class="cert-meta">
                 <span class="cert-date"><i class="fa-regular fa-calendar-check"></i> Certified</span>
@@ -1096,6 +1103,13 @@
           </div>
         </div>
 
+        <!-- Certificate Visual Preview -->
+        <div id="cert-modal-img-container" class="cert-modal-img-container" style="display: none;">
+          <a id="cert-modal-img-link" href="" target="_blank" title="Click to view full certificate">
+            <img id="cert-modal-img" src="" alt="Certificate Preview" class="cert-preview-img">
+          </a>
+        </div>
+
         <p id="cert-modal-desc" class="cert-modal-desc"></p>
 
         <div class="cert-modal-info-box">
@@ -1123,7 +1137,13 @@
         </div>
 
         <div class="cert-modal-actions">
-          <button id="close-cert-btn" class="btn btn-primary w-full">Close Preview</button>
+          <a id="cert-modal-pdf-link" href="" target="_blank" class="btn btn-primary" style="display: none;">
+            <i class="fa-solid fa-file-pdf"></i> View Original PDF
+          </a>
+          <a id="cert-modal-verify-link" href="" target="_blank" class="btn btn-outline" style="display: none;">
+            <i class="fa-solid fa-arrow-up-right-from-square"></i> Verify Online
+          </a>
+          <button id="close-cert-btn" class="btn btn-secondary">Close Preview</button>
         </div>
       </div>
     </div>
